@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sources</title>
+<style>
+body {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 50px;
+  align-items:center;
+  height:auto;
+  background: url('https://img.freepik.com/premium-photo/4k-hd-plain-empty-background-with-copy-space-ideal-natural-cures-minimalist-designs_1193781-34483.jpg?semt=ais_hybrid') no-repeat center center fixed;
+  background-size: cover;
+  max-width: 100%;
+  
+}
+
+ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+}
+
+ul li{
+  list-style:none;
+  transition:0.5s;
+}
+
+ul li a{
+  display: block;
+  position:relative;
+  text-decoration:none;
+  padding:5px;
+  font-size:28px;
+  font-family: sans-serif;
+  color:#fff;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+ul:hover li a{
+  transform:scale(1);
+  opacity:0.2;
+  filter:blur(0.5px);
+}
+
+ul li a:hover{
+  transform:scale(1);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color: black;
+  font-family: sans-serif;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#bcf0d8;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+  border-radius: 2px;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+.bar{
+    width:100%;
+    height: 2px;
+    background-color: azure;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+h1{
+    font-size:40px;
+}
+</style>
+</head>
+<body>
+    <div>
+    <div class="navbar">
+    <h1>Nature Ayurvedic Sources</h1>
+</div>
+<div class="bar"></div>
+    <ul>
+        <li><a href="Sources/red.html">Red Sandalwood</a></li>
+        <li><a href="Sources/sandle.html">Sandalwood</a></li>
+        <li><a href="Sources/turmeric.html">Turmeric</a></li>
+        <li><a href="Sources/saffron.html">Saffron</a></li>
+        <li><a href="Sources/tulsi.html">Tulsi</a></li>
+        <li><a href="Sources/ashwagandha.html">Ashwagandha</a></li>
+        <li><a href="Sources/shatavari.html">Shatavari</a></li>
+        <li><a href="Sources/neem.html">Neem</a></li>
+        <li><a href="Sources/bael.html">Bael</a></li>
+        <li><a href="Sources/amla.html">Amla</a></li>
+     </ul>
+    </div>
+</body>
+</html>
